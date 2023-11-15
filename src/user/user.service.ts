@@ -6,6 +6,9 @@ import * as bcrypt from 'bcryptjs';
 
 @Injectable()
 export class UserService {
+  findById(userId: string) {
+    throw new Error('Method not implemented.');
+  }
   constructor(@InjectModel(User.name) private userModel: Model<UserDocument>) {}
 
   /**
